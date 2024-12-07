@@ -12,9 +12,9 @@
   --text-color: #f1b2ce;
   --decoration-color: var(--accent-color);
   --background-color: #000028;
-  --header1-color: #db00ff;
-  --header2-color: var(--accent-color);
-  --header3-color: var(--background-color);
+  --heading-clr: #db00ff;
+  --header-color-title: var(--accent-color);
+  --header-color-decor:var(--background-color);
   --is-light: visible;
 
   /* сохраните этот селектор в приведённом виде.
