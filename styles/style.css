@@ -16,8 +16,8 @@
   block-size: 25px;
   border-block-start: 1px solid var(--decoration-color);
   border-inline-end: 1px solid var(--decoration-color);
-  top: 0; 
-  right: 0; 
+  /* top: 0; 
+  right: 0;  */
 }
 
 .decorated-zone::after {
@@ -29,8 +29,8 @@
   block-size: 25px;
   border-block-end: 1px solid var(--decoration-color);
   border-inline-start: 1px solid var(--decoration-color);
-  top: 0; 
-  right: 0; 
+  /* top: 0; 
+  right: 0;  */
 }
 
 .text-link {
@@ -72,6 +72,8 @@
   font-size: var(--regular-font-size);
   text-transform: uppercase;
   line-height: 25px;
+  /* top: 0; 
+  right: 0;  */
 }
 
 .header__decoration::after {
@@ -339,7 +341,7 @@
     justify-self: center;
   }
   .header {
-    height: 768px;
+    min-height: 768px;
 }
 
   .header__theme-menu-list {
@@ -370,10 +372,10 @@
 
   .topic--columns .topic__title {
     grid-row: span 1;
+    grid-column: span 3
   }
 
   .topic--columns .topic__card{
-    grid-row: 2 / 3 ;
     grid-column: span 1;
   }
   .topic--columns > .title_decor{
