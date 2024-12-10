@@ -16,7 +16,6 @@
   block-size: 25px;
   border-block-start: 1px solid var(--decoration-color);
   border-inline-end: 1px solid var(--decoration-color);
-  top: 20px;
 }
 
 .decorated-zone::after {
@@ -28,8 +27,6 @@
   block-size: 25px;
   border-block-end: 1px solid var(--decoration-color);
   border-inline-start: 1px solid var(--decoration-color);
-  bottom: 20px;
-  
 }
 
 .text-link {
@@ -45,10 +42,11 @@
 .header {
   height: 100vh;
   min-height: 668px;
-  padding: 10px;
   background-image: var(--background-image);
   background-size: cover;
   background-position: center;
+  background-attachment: fixed; 
+  padding: 10px;
   display: grid;
   grid-template-rows: 1fr auto 1fr;
   grid-template-columns: repeat(2, 1fr);
@@ -69,7 +67,6 @@
   font-size: var(--regular-font-size);
   text-transform: uppercase;
   line-height: 25px;
-  top: 20px;  
 }
 
 .header__decoration::after {
@@ -136,12 +133,6 @@
 }
 
 .topic {
-  grid-column: 1 / 4;
-  grid-template-columns: 1fr 1fr 1fr;
-  display: grid;
-  gap: 20px;
-}
-.topic--reduces_concentration{ 
   grid-column: 1 / 4;
   grid-template-columns: 1fr 1fr 1fr;
   display: grid;
@@ -241,7 +232,7 @@
   .topic {
     grid-template-columns: 1fr 2fr;
   }
-  .topic--reduces_concentration {
+  .topic-reduces_concentration {
     grid-template-columns: 1fr 2fr;
   }
 
@@ -254,11 +245,11 @@
     grid-column: 2 / 3;
   }
 
-  .topic--reduces_concentration .topic__card{
+  .topic-reduces_concentration .topic__card{
     grid-column: 1 / 4;
   }
 
-  .topic--reduces_concentration > .title_decor{
+  .topic-reduces_concentration > .title_decor{
     grid-column: 2 / 3;
   }
 
@@ -352,7 +343,7 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .topic--reduces_concentration {
+  .topic-reduces_concentration {
     grid-template-columns: repeat(3, 1fr);
   }
 
@@ -360,21 +351,22 @@
     grid-column: 2 / 4;
   }
 
-  .topic--reduces_concentration {
+  .topic-reduces_concentration {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
 
   }
 
-  .topic--reduces_concentration .topic__title {
+  .topic-reduces_concentration .topic__title {
     grid-row: span 1;
-    grid-column: span 3
+    grid-column: span 3;
+    width: 315px;
   }
 
-  .topic--reduces_concentration .topic__card{
+  .topic-reduces_concentration .topic__card{
     grid-column: span 1;
   }
-  .topic--reduces_concentration > .title_decor{
+  .topic-reduces_concentration > .title_decor{
     grid-column: 2 / 4;
   }
 
